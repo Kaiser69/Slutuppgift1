@@ -1,4 +1,5 @@
  body {
+    width: 100%;
     background-color: rgb(255, 255, 255);
     margin: 0;
     overflow-x: hidden;
@@ -244,54 +245,20 @@
         }
       }
       
-   .overlay {
-    height: 50%;
-    width: 30%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    }
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 100%;
+    
+    
+  }
+}
 
-    .overlay-content {
-    position: relative;
-    top: 25%;
-    width:50%;
-    text-align: center;
-    margin-top: 30px;
-    }
-
-    .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    }
-
-    .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-    }
-
-    .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    font-size: 60px;
-    }
-
-    @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-     font-size: 40px;
-     top: 15px;
-     right: 35px;
-    }
-   }
- 
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 70%;
+  }
+}
 
 

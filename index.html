@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Möllans Kök</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans
   " rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="menunav.css">
@@ -69,7 +68,15 @@
 
       
       <div class="column-33">
-          <img src="media/bw1.jpg" width="535" height="721" >
+          <ul id="slides">
+              <li class="slide showing"><img src="media/kitchin1.jpg" width="535" height="721" >1</li>
+              <li class="slide"><img src="media/kitchin2.jpg" width="535" height="721" >2</li>
+              <li class="slide"><img src="media/kitchin3.jpg" width="535" height="721" >3</li>
+              <li class="slide"><img src="media/kitchin4.jpg" width="535" height="721" > 4</li>
+              <li class="slide"><img src="media/kitchin5.jpg" width="535" height="721" > 5</li>
+          </ul>
+    
+    >
       </div>
       
     </div>
@@ -109,9 +116,9 @@
 
           </div>
         </section>
-        <h1 style="font-size:5em">MÖLLANS SHOWROOM </h1>
   </div>
     <div class="gallery">
+        <h1 style="font-size:3em">MÖLLANS SHOWROOM </h1>
       <h1>Möllans Kök</h1>
       <p>Slide Bild gallery</p>
     </div>
@@ -125,36 +132,38 @@
 
 
     <div class="grid-map">
-        <div id="address"> <h2>Malmö</h2>
-          <p>Storgatan 28, 211 42 Malmö</p> </div>
+        <div id="address"> <h2>Lund</h2>
+          <p>Uardavägen 22 D
+              224 71 Lund</p> </div>
       
-        <div id="map">
-          <h2>Location</h2>
-          <p>Map</p>
+        
+          <div id="googleMap" style="width:100%;height:300px;"></div>
+        
         </div> 
-      </div>
     
+    
+
 
      <!-- Footer -->
      <nav class="bottomnav" id="mybottomnav">
         <div class="footer padding-64">
-            <a href="#top" class="back-to-top">Back to top</a>
+            <a href="#top" class="back-to-top"> Back to top</a>
             <footer>
     
              
-                <h2>Responsive Four Column Layout</h2>
-                <p><strong>Resize the browser window</p><br><br>
+                <h2>Möllans Kök</h2>
+                <p><strong>mange the footer</p><br><br>
                 <div class="row">
                   <div class="column" >
-                    <h2>Column 1</h2>
+                    <h2>TEXT</h2>
                     <p>Some text..</p>
                   </div>
                   <div class="column" >
-                    <h2>Column 2</h2>
+                    <h2>TEXT</h2>
                     <p>Some text..</p>
                   </div>
                   <div class="column" >
-                    <h2>Column 3</h2>
+                    <h2>TEXT</h2>
                     <p>Some text..</p>
                   </div>
                   <div class="column">
@@ -170,25 +179,43 @@
            </nav>
            
 
+   <script>
 
-        <script src="public/js/script.js">
-        
-        window.onscroll = function() {
-    // console.log(window.screen.availHeight)
-    var part1 = document.getElementById("part1");
-    var part2 = document.getElementById("part2");
-    var part3 = document.getElementById("part3");
+     /* add google location*/
+
     
-    var screenHeight = window.screen.availHeight;
-    var offset = 50*document.body.scrollTop/screenHeight;
-    part1.style.backgroundPosition = "50% " + offset + "%";
-    if(offset>10) part2.style.backgroundPosition = "50% " + (offset-10) + "%";
-    if(offset>50) part3.style.backgroundPosition = "50% " + (offset-50) + "%";
+    function myMap()
+  {
+    myCenter=new google.maps.LatLng(55.714100, 13.227980) ;
+    var mapOptions= {
+      center:myCenter,
+  
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+
+
+   /* add slide img*/
+   var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,6000);
+
+function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
 }
-
-        
-         </script>
-
-
+   
+   </script>
+     
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrV8M_hXkGQ6LZeqSQZ_R-VqJLMfFHGZI&callback=myMap"></script>
+  
 </body>
 </html>
