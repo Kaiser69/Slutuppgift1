@@ -6,33 +6,59 @@
   <title>Möllans Kök</title>
   <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans
   " rel="stylesheet">
+
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
   <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="menunav.css">
 </head>
 <body>
     
-    
     <div class="part1" style="color:rgb(0, 0, 0)" > Möllans Verkstäder </div>
 
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-        <a href="#">MÖLLANS/HEM</a>
-        <a href="#">MÖLLANS SHOWROOM</a>
-        <a href="#">KONTAKT / BOKNING</a>
-        <a href="#">VIKTIGA DOKUMENT</a>
-        <a href="#">AVTAL</a>
-      </div>
-    </div>
+      <!-- drop menu -->
+  
 
+    <header class="header"> 
+      <nav class="navbar navbar-style">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+
+            <a href=""><img class="logo" src="media/mkl.png"> </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="micon" >
+
+            <ul class="nav navbar-nav navbar-right">
+              <li> <a href="index.html">MÖLLANS/HEM</a> </li>   
+              <li> <a href="lighthhouse.html">MÖLLANS SHOWROOM</a> </li> 
+              <li> <a href="">KONTAKT / BOKNING</a> </li>  
+              <li> <a href="">VIKTIGA DOKUMENT</a> </li>  
+              <li> <a href="">AVTAL</a> </li>   
+            </ul>
+         </div>
+
+      </nav>
+
+    </header>
 
               <!-- The möllans kök-->
-              <div class="container">
+              <div class="container1">
                   <h1 class="ribbon3">MÖLLANSVERKSTÄDER</h1> 
-                  <p>  Möllans Verkstäder ritar och tillverkar handbyggda sekelskifteskök, 
+                  <p style="font-size:140%;">  Möllans Verkstäder ritar och tillverkar handbyggda sekelskifteskök, 
                     20- talskök och funkiskök. Allt tillverkas för hand, i massivt trä och med 
                     traditionsenliga metoder. Alla kök är mått- och platsanpassade, det betyder 
                     att varje skåp är unikt och byggs efter din bostads förutsättningar och dina 
@@ -50,7 +76,7 @@
     <div class="row2">
       <div class="column-66">
         <h2 class="large-font" style="color:rgb(255, 255, 255);">VÅRA KÖK STILER</h2> <br>
-        <p style="color:rgb(255, 255, 255);">
+        <p style="color:rgb(255, 255, 255); font-size:140%;">
           Färdighet:...Färg, form och hantverk har alltid inspirerat mig att lära mig mer. I snart 20 år har jag 
           byggt och levererat handbyggda kök. Jag kan fortfarande stå framför ett nybyggt köksskåp i 
           snickeriet och förundras över hur vackert det är i all sin enkelhet. Ett skåp byggt först och 
@@ -62,11 +88,8 @@
           och handbyggda kök. När ni vänder er till Möllansverkstäder är det mig ni möter. Jag tar gärna emot
            er i min utställning och hjälper till med att planera och rita ert framtida kök.</p>
            <br>
-    
-         
       </div>
 
-      
       <div class="column-33">
           <ul id="slides">
               <li class="slide showing"><img src="media/kitchin1.jpg" width="535" height="721" >1</li>
@@ -88,7 +111,7 @@
             <div class="column1" >
               <button class="buttonA">
               <h2>TRADITION</h2>
-              <p>Våra massiva träkök byggs efter alla konstens 
+              <p style="font-size:130%;">Våra massiva träkök byggs efter alla konstens 
                   regler. Kunskap vi hämtat från över 100 år av 
                   Svensk kökstradition. Det betyder massiva 
                   träslag och inga genvägar.</p>
@@ -97,7 +120,7 @@
             <div class="column1" >
                 <button class="buttonA">
               <h2>KVALITET</h2>
-              <p>Svensk norrlandsfuru i stommar, hyllplan och lådor.
+              <p style="font-size:130%;">Svensk norrlandsfuru i stommar, hyllplan och lådor.
                   Massiva överfalsade luckor. Samtliga lådor löper 
                  på dämpade fullutdragsskenor av 
                  högsta kvalitet.</p>
@@ -106,7 +129,7 @@
             <div class="column1" >
                 <button class="buttonA">
               <h2>HANTVERK</h2>
-              <p>Vi är stolta över att kunna säga att våra kök är 
+              <p style="font-size:130%;">Vi är stolta över att kunna säga att våra kök är 
                   handbyggda i Sverige och att det alltid finns 
                   en skicklig snickare bakom varje kök 
                   som levereras från oss.</p>
@@ -122,53 +145,65 @@
       <h1 style="font-size:3em">MÖLLANS SHOWROOM </h1>
     <h1>Möllans Kök</h1>
     <p>Slide Bild gallery</p>
+  <br>
+
+  <a href="lighthhouse.html">
+    <button> Klick mig till Bild gallery </button></a>
   </div>
+   
+  <div class="instagram">
+      <h1> Möllans Verkstäder</h1>
+
+      <button class="button-in"> on Instagram</button>
+      <p><i class="fa fa-instagram" style="color:rgba(255, 60, 0, 0.808)"></i></p> 
+     
+    </div>
+
+
   <marquee scrollamount="7" direction="left" behavior="scroll" style="color:#0e2402c2;"> <i><h1>Jag har många års erfarenhet av att rita traditionella och handbyggda kök. När ni vänder er till Möllansverkstäder är det mig ni möter. Jag tar gärna emot er i min utställning och hjälper till med att planera och rita ert framtida kök.!...</h1></i></marquee> 
-    <div class="grid-map">
+   
+     <!-- map -->
+  <div class="grid-map">
         <div id="address"> <h2>Lund</h2>
           <p>Uardavägen 22 D
               224 71 Lund</p> </div>
       
         
-          <div id="googleMap" style="width:100%;height:300px;"></div>
+          <div id="googleMap" style="width:100%;height:400px"></div>
         
         </div> 
-    
-        <div class="instagram">
-          <h1> Möllans Verkstäder</h1>
-    
-          <button class="button-in">on Instagram</button>
-         
-        </div>
-    
-    
 
 
      <!-- Footer -->
+     
      <nav class="bottomnav" id="mybottomnav">
-        <div class="footer padding-64">
-            <a href="#top" class="back-to-top"> Back to top</a>
+        <div class="footer padding-64"> <br>
+            <i href="#top" class="back-to-top"> Back to top</i>
+       
             <footer>
-    
-             
+                     <br><br>
                 <h2>Möllans Kök</h2>
                 <p><strong>mange the footer</p><br><br>
                 <div class="row">
                   <div class="column" >
-                    <h2>TEXT</h2>
+                    <h3>TEXT</h3>
                     <p>Some text..</p>
                   </div>
                   <div class="column" >
-                    <h2>TEXT</h2>
+                    <h3>TEXT</h3>
                     <p>Some text..</p>
                   </div>
                   <div class="column" >
-                    <h2>TEXT</h2>
+                    <h3>TEXT</h3>
                     <p>Some text..</p>
                   </div>
                   <div class="column">
                     <h2>Social Media Links</h2>
-                    <p>Some text..</p>
+                    <i href="#" class="fa fa-facebook"></i>
+                    <i href="#" class="fa fa-instagram" style="color:orangered"></i>
+                    <i href="#" class="fa fa-linkedin"></i>
+                    <i href="#" class="fa fa-skype" style="color:rgb(66, 233, 255)"></i>
+                    <i href="#" class="fa fa-twitter" style="color:skyblue"></i>
                   </div>
                 </div>
 

@@ -36,24 +36,30 @@
    }
 
 
-    .container{
+    .container1{
         background-image: url(media/bwood.png);
         width: 80%;
-        max-width: 960px;
-        min-height: 3.750em; 
+        max-width: 1060px;
+        min-height: 5.750em; 
         margin: 2em auto;
-        padding: 1.250em;
+        padding: 3em;
         border-radius: 1em;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
         line-height: 1.5em;
         color: #ffffff;
       }
+
+      .container1 p {
+
+        margin: 1.5em;
+      }
       
       .ribbon3{
+        overflow-x: hidden;
         position:relative;
         padding: 0 0.5em;
         font-size:2.000em;
-        margin: 0 0 0 -0.625em;
+        margin: 0 0 0 -1.5em;
         line-height: 2em;
         color: #ffffff;
         border-radius: 0 0.156em 0.156em 0;
@@ -66,7 +72,7 @@
    .container2 {
     
       display: grid;
-      padding: 44px;
+      padding: 26px;
       background-image: url(media/bwood.png)
     }
  
@@ -104,7 +110,7 @@
       }
       
       .row {
-        top: 15em;
+       
         margin: 3em;
       }
       
@@ -134,10 +140,17 @@
         text-align: center;
         background: #4a1a5e5d;
         color: white;
-        
-        
+
     }
     
+    .gallery button {
+      background-image: url(media/kitchin2.jpg);
+      padding: 2em;
+      border-radius: 0.5em;
+      font-size: 40px;
+      box-shadow: 0 8px 5px 0 rgba(0,0,0,0.5);
+
+    }
     .gallery h1 {
         font-size: 40px;
     }
@@ -145,7 +158,6 @@
      /*   instagram */
 
      .instagram {
-       margin-bottom: 5em;
        padding: 40px;
        text-align: center;
        color: #000000;
@@ -160,15 +172,29 @@
 
      .button-in {
       border: none;
-      padding: 3px;
+      padding: 2px;
       cursor: pointer;
       background-color: rgba(99, 67, 102, 0.527);
       border-radius: 0.2em;
       font-family: 'Tangerine', serif;
-      font-size: 2em;
+      font-size: 2.5em;
       text-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+      box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.76); 
+    
     }
+      
+     .button-in:hover {
+      
+         background-color: rgba(0, 162, 255, 0.548);
+     }
   
+    .button-in:active {
+
+       background-color: rgba(0, 0, 0, 0.445);
+       box-shadow: 0 5px 9px rgba(0, 153, 255, 0.479);
+       transform: translateY(4px)
+    }
+
    .footer {
   
     width:auto;
@@ -198,7 +224,12 @@
       display: table;
       clear: both;
     }
-    
+    .back-to-top {
+
+      font-size: 14px;
+      color: #ffffffb4;
+    }
+
     @media screen and (max-width: 600px) {
       .column{
           width: 50%;
@@ -268,9 +299,11 @@
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 401px) {
   body {
-    font-size: 100%;
+      font-size: 100%;
       height: inherit;
       margin: 0 auto;
+      align-items: 90%;
+    
 
      } 
 }
@@ -278,9 +311,11 @@
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 900px) {
   body {
-    font-size: 60%;
+    font-size: 65%;
     height: inherit;
     margin: 0 auto;
+    align-items: 60%;
+
   }
 }
 
