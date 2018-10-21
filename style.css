@@ -1,41 +1,57 @@
- body {
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    overflow-x: hidden;
-       }
+body {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  overflow-x: hidden;
+     }
 
-  *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      
-    }
-  
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    
+  }
+
 
  .part1 {
-    display: inline-block;
-    width: 100%;
-    height: 91vh;   
+    max-width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;   
     color: rgb(0, 0, 0);
-    background-position: 50% 0%;
+    background-position: 100% 0%;
     background-size: cover;
     background-attachment: fixed;
     background-image: url( media/parallax1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    text-align: center;
-    font-family: 'Tangerine', serif;
-    font-size: 10em;
-    text-shadow: 4px 4px 4px rgb(255, 255, 255);
+   
    }
 
+   .text1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 14em;
+    text-shadow: 4px 4px 4px rgb(255, 255, 255);
 
+   }
+
+   @media(max-width:568px )
+   {
+    .part1 {
+
+      background-attachment: scroll;
+    }
+
+   }
     .container1{
         background-image: url(media/bwood.png);
         width: 80%;
@@ -55,7 +71,7 @@
       }
       
       .ribbon3{
-        overflow-x: hidden;
+  
         position:relative;
         padding: 0 0.5em;
         font-size:2.000em;
@@ -185,7 +201,7 @@
       
      .button-in:hover {
       
-         background-color: rgba(0, 162, 255, 0.548);
+         background-color: rgba(255, 255, 255, 0.548);
      }
   
     .button-in:active {
@@ -195,49 +211,45 @@
        transform: translateY(4px)
     }
 
-   .footer {
+    .footer {
   
-    width:auto;
-    padding:2em;
-    background-color:rgb(17, 22, 16);;
-    text-align: center;
-    font-size: 10px;
-    opacity: 0.6;
-    transition: 0.3s;
-    color: rgb(150, 146, 153);
-    
-    }
-  
-      .footer:hover {
-        opacity: 1}
-        
-      .column {
-      float: left;
-      width: 25%;
-      padding: auto;
+      width:auto;
+      background-color:rgb(17, 22, 16);;
       text-align: center;
+      font-size: 8px;
+      opacity: 0.6;
+      transition: 0.3s;
+      color: rgb(150, 146, 153);
       
-    }
+      }
+    
+        .footer:hover {
+          opacity: 1}
+          
+        .column {
+        float: left;
+        width: 25%;
+        padding: auto;
+        text-align: center;
+        
+      }
+    
     
     .row:after {
       content: "";
       display: table;
       clear: both;
     }
-    .back-to-top {
+    
 
-      font-size: 14px;
-      color: #ffffffb4;
-    }
-
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 401px) {
       .column{
           width: 50%;
     
     }
   }
     
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 920px) {
       .column {
           width: 100%;
     
@@ -245,14 +257,14 @@
   }
 
     
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 401px) {
     .column-66 , .column-33 {
         width: 50%;
   
   }
 }
   
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 920px) {
     
   .column-66 , .column-33  {
         width: 100%;
@@ -281,14 +293,14 @@
         text-align: center;
         
       }
-          @media screen and (max-width: 600px) {
+          @media screen and (max-width: 401px) {
         .column1{
             width: 50%;
         }
     
       }
       
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 900px) {
         .column1{
             width: 100%;
       
@@ -296,27 +308,23 @@
       }
       
       
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 401px) {
-  body {
-      font-size: 100%;
-      height: inherit;
-      margin: 0 auto;
-      align-items: 90%;
+    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 401px) {
+      body {
+        font-size: 100%;
+          height:100%;
+          margin: 0 auto;
     
-
-     } 
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 900px) {
-  body {
-    font-size: 65%;
-    height: inherit;
-    margin: 0 auto;
-    align-items: 60%;
-
-  }
-}
-
-
+         } 
+    }
+    
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 900px) {
+      body {
+        font-size: 60%;
+        height: 100%;;
+        margin: 0 auto;
+      
+      }
+    }
+    

@@ -127,3 +127,49 @@ body {
     filter: grayscale(0);
     transform: scale(1.1);
 }
+
+
+.footer {
+  
+  width:auto;
+  background-color:rgb(17, 22, 16);;
+  text-align: center;
+  font-size: 8px;
+  opacity: 0.6;
+  transition: 0.3s;
+  color: rgb(150, 146, 153);
+  
+  }
+
+    .footer:hover {
+      opacity: 1}
+      
+    .column {
+    float: left;
+    width: 25%;
+    padding: auto;
+    text-align: center;
+    
+  }
+
+    
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  @media screen and (max-width: 401px) {
+    .column{
+        width: 50%;
+  
+  }
+}
+  
+  @media screen and (max-width: 920px) {
+    .column {
+        width: 100%;
+  
+    }
+}

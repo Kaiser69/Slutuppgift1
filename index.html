@@ -14,15 +14,17 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
   <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="menunav.css">
 </head>
 <body>
+    <a name="top"></a>
+    <div class="part1">
     
-    <div class="part1" style="color:rgb(0, 0, 0)" > Möllans Verkstäder </div>
+      <div class="text1" > Möllans Verkstäder </div>
+
+    </div>
 
       <!-- drop menu -->
   
@@ -50,6 +52,7 @@
               <li> <a href="">AVTAL</a> </li>   
             </ul>
          </div>
+        </div>
 
       </nav>
 
@@ -57,7 +60,7 @@
 
               <!-- The möllans kök-->
               <div class="container1">
-                  <h1 class="ribbon3">MÖLLANSVERKSTÄDER</h1> 
+                  <h1 class="ribbon3"  style="overflow-x: hidden;">MÖLLANSVERKSTÄDER</h1> 
                   <p style="font-size:140%;">  Möllans Verkstäder ritar och tillverkar handbyggda sekelskifteskök, 
                     20- talskök och funkiskök. Allt tillverkas för hand, i massivt trä och med 
                     traditionsenliga metoder. Alla kök är mått- och platsanpassade, det betyder 
@@ -148,7 +151,7 @@
   <br>
 
   <a href="lighthhouse.html">
-    <button> Klick mig till Bild gallery </button></a>
+    <button style="font-size: 22px" > Klick mig till Bild gallery </button></a>
   </div>
    
   <div class="instagram">
@@ -172,33 +175,34 @@
           <div id="googleMap" style="width:100%;height:400px"></div>
         
         </div> 
-
+ <br><br>
 
      <!-- Footer -->
      
      <nav class="bottomnav" id="mybottomnav">
-        <div class="footer padding-64"> <br>
-            <i href="#top" class="back-to-top"> Back to top</i>
+        <div class="footer padding-34"> <br>
+        
+            <a href="#top" class="back-to-top">Back to Top</a>
        
             <footer>
-                     <br><br>
-                <h2>Möllans Kök</h2>
-                <p><strong>mange the footer</p><br><br>
+                     <br>
+                <h3>Möllans Kök</h3>
+                <br>
                 <div class="row">
                   <div class="column" >
-                    <h3>TEXT</h3>
+                    <h4>TEXT</h4>
                     <p>Some text..</p>
                   </div>
                   <div class="column" >
-                    <h3>TEXT</h3>
+                    <h4>TEXT</h4>
                     <p>Some text..</p>
                   </div>
                   <div class="column" >
-                    <h3>TEXT</h3>
+                    <h4>TEXT</h4>
                     <p>Some text..</p>
                   </div>
                   <div class="column">
-                    <h2>Social Media Links</h2>
+                    <h4>Social Media Links</h4>
                     <i href="#" class="fa fa-facebook"></i>
                     <i href="#" class="fa fa-instagram" style="color:orangered"></i>
                     <i href="#" class="fa fa-linkedin"></i>
@@ -208,7 +212,8 @@
                 </div>
 
 
-                <p> © 2018 K Design AB. All rights reserved <a href="file:///Users/kaiser/Documents/uyghurtech/Slutions.html" title="footer" target="_blank">Kaiser A ÖzHun</a></p>
+                <p style="font-size: 1.5em;"> © 2018 K Design AB. All rights reserved <a href="file:///Users/kaiser/Documents/uyghurtech/Slutions.html" title="footer" target="_blank">Kaiser A ÖzHun</a></p>
+                <br> <br>
               </footer>
                </div>
            </nav>
@@ -247,6 +252,8 @@ function nextSlide() {
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+
+
    
    </script>
      
