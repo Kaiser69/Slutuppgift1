@@ -1,131 +1,131 @@
-<! DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="contact.css">
-    <script src="main.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Elegant Contact Form</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="contact.css">
+
 </head>
 <body>
 
-<head>
-        <meta charset="UTF-8">
-        <title>How to create the contact form using HTML and CSS</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $(".btn").click(function(){
-                  $("input[type='text'], textarea").val("");
-                });
-            });
-        </script>
-    </head>
-    <body>
-        
-    <div class="wrapper">
-      <div class="content">
-        <h1>CONTACT FORM</h1>
-        <p>Connect with us by sending your views.</p>
-      </div>
-    
-      <div class="form">
-    
-        <div class="top-form">
-          <div class="inner-form">
-            <div class="label">name</div>
-            <input type="text" placeholder="Jhon">
-          </div>
-          <div class="inner-form">
-            <div class="label">email</div>
-            <input type="text" placeholder="Example@gmail.com">
-          </div>
-          <div class="inner-form">
-            <div class="label">phone</div>
-            <input type="text" placeholder="1234567890">
-          </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">              
+        <div class="topnav" id="myTopnav">
+                <a class="navbar-brand" href="#"> <img class="images" src="media/mkl.png" style="width:30px;height:30px;"></a>
+                <a class="nav-link" href="index.html">MÖLLANS/HEM</a>
+                <a class="nav-link" href="lighthhouse.html">MÖLLANS SHOWROOM</a> 
+                <a class="nav-link" href="contact/index.php">VIKTIGA DOKUMENT</a> 
+                <a class="nav-link" href="#">AVTAL</a> 
+                <a class="nav-link" href="#"> BOKNING</a> 
+                <a class="#kontakt" href="contact.html">KONTAKT</a> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+    </nav>
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 m-auto">
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <p class="hint-text">We'd love to hear from you, please drop us a line if you've any query or question.</p>       
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" id="inputName" required>
+                            </div>
+                        </div>                
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputPhone">Phone</label>
+                                <input type="text" class="form-control" id="inputPhone" required>
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="form-group">
+                        <label for="inputSubject">Subject</label>
+                        <input type="text" class="form-control" id="inputSubject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> <a href="mailto:pen1921@me.com?Subject=Test%20Mail">Send Mail</a></button>
+                </form>
+            </div>
         </div>
-    
-        <div class="middle-form">
-          <div class="inner-form">
-            <div class="label">subject</div>
-            <input type="text" placeholder="Subject">
-          </div>
-        </div>
-
-
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            Select image to upload:
-            <input type="file" name="fileToUpload" id="fileToUpload">
-            <input type="submit" value="Upload Image" name="submit">
-        </form>
-  
-    
-        <div class="bottom-form">
-          <div class="inner-form">
-            <div class="label">message</div>
-            <textarea placeholder="Your message"></textarea>
-          </div>
-        </div>
-    
-        <div class="btn">send form</div>
-    
-      </div>
     </div>
-    
+</div>
 
-          <script>
-        <?php
-        $target_dir = "uploads/";
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        // Check if image file is a actual image or fake image
-        if(isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-            if($check !== false) {
-                echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-            } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-            }
-        }
-        // Check if file already exists
-        if (file_exists($target_file)) {
-            echo "Sorry, file already exists.";
-            $uploadOk = 0;
-        }
-        // Check file size
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
-            echo "Sorry, your file is too large.";
-            $uploadOk = 0;
-        }
-        // Allow certain file formats
-        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-        && $imageFileType != "gif" ) {
-            echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-            $uploadOk = 0;
-        }
-        // Check if $uploadOk is set to 0 by an error
-        if ($uploadOk == 0) {
-            echo "Sorry, your file was not uploaded.";
-        // if everything is ok, try to upload file
-        } else {
-            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-            } else {
-                echo "Sorry, there was an error uploading your file.";
-            }
-        }
-        ?>
 
-          </script>
-     
-    
+     <!--- Footer -->
+  <footer>     
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/map1.png" style="width:31px;height:56px;">
+                    <hr class="light">
+                    <p>Address: Storgatan 28, 211 42 Malmö</p>
+                    <p>Phone: +46 708 88 64 40</p>
+                    <p>Email: info@mollansverkstader.se</p>
+                       </div>
+                          <div class="col-md-4">
+                             <hr class="light">
+                              <h5>Öpet tid</h5>
+                              <hr class="light">
+                              <p>Mon-Fri: 9am - 5pm</p>
+                              <p>Lördag: 10am - 4pm</p>
+                              <p>Söndag: Stäng</p>
+                          </div>
+                              <div class="col-md-4">
+                                  <hr class="light">
+                                   <h5>Värkstad</h5>
+                                   <hr class="light">
+                                   <p>Malmö</p>
+                                   <p>Lund</p>
+                                   <p>Lomma</p>
+                               </div>
+                 <div class="col-12">
+                     <hr class="light-100">
+                     <p>
+                          <a style="font-size: 1em;  color: aliceblue"  href="#top" class="back-to-top">Back to Top</a>  
+                         </p>
+                     <p style="font-size: 0.6em;"> Copyright © 2018 K-design and developER All rights reserved</p>
+                     
+                 </div>
+            </div>
+        </div>
+      
+        </footer>
+      
 
+
+
+        <script>
+        
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+        </script>
+        
 </body>
-</html>
+</html>                            

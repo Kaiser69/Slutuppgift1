@@ -8,7 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans
-    " rel="stylesheet"> <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    "rel="stylesheet"> <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="lightbox.min.css">
     <link rel="stylesheet" href="lightbox-plus-jquery.min.js">
@@ -16,219 +20,237 @@
     <script src="main.js"></script>
 </head>
 <body>
-        <a name="top"></a>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-           <div class="numbertext">1 / 3</div>
-           <img src="media/show1.jpg" style="width:100%">
-           <div class="text"> Möllans Kök Show</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="media/show3.jpg" style="width: 100%;">
-            <div class="text">Möllans Kök show</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="media/show2.jpg" style="width:100%">
-            <div class="text">Möllas Kök Show</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    
-    <!-- dropdown -->
-
-    <div class="dropdown">
-            <button class="dropbtn"><i class="fa fa-bars"></i> MENU</button>
-            <div class="dropdown-content">
-              <a href="index.html">MÖLLANS/HEM</a>
-              <a href="lighthhouse.html">MÖLLANS SHOWROOM</a>
-              <a href="#">KONTAKT / BOKNING</a>
-              <a href="#">VIKTIGA DOKUMENT</a>
-              <a href="#">AVTAL</a>
+  
+        <div id="slides" class="carousel slide" data-ride="carousel">
+       
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1" ></li>
+                <li data-target="#slides" data-slide-to="2" ></li>
+            </ul>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="media/show1.jpg" >
+              <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>LA is always so much fun!</p>
+              </div>
             </div>
-    </div>
-   
+      
+            <div class="item">
+              <img src="media/show1.jpg" >
+              <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="media/show1.jpg">
+              <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+              </div>
+            </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+      
+    <br>
+    <!-- dropdown -->
+            
+            
+            <div class="topnav" id="myTopnav">
+                    <a class="nav-link" href="index.html">MÖLLANS/HEM</a>
+                    <a class="nav-link" href="lighthhouse.html">MÖLLANS SHOWROOM</a> 
+                    <a class="nav-link" href="#">VIKTIGA DOKUMENT</a> 
+                    <a class="nav-link" href="#">AVTAL</a> 
+                    <a class="nav-link" href="#"> BOKNING</a> 
+                    <a class="#kontakt" href="contact.html">KONTAKT</a> 
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                  </div>
+      
     <!-- showroom -->
 
     <h1> Möllans Kök SHOWROOM </h1>
 
     <div class="gallery">
       
-        <a href="media/kitchin4.jpg" data-lightbox="Möllans Showroom" data-title=" Möllans Kök"><img src="media/kitchin4.jpg" width="218" height="145"></a>
-        <a href="media/kitchin5.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin5.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin6.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin6.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin7.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin7.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin8.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin8.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin9.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin9.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin10.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin10.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin11.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin11.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin12.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin12.jpg" width="218" height="145"></a>
-        <a href="media/kitchin13.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin13.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin14.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin14.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin15.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin15.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin16.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin16.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin17.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin17.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin18.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin18.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin19.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin19.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin20.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin20.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin21.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin21.jpg" width="218" height="145"></a>
-        <a href="media/kitchin22.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin22.jpg" width="218" height="145"></a>
-        <a href="media/kitchin23.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin23.jpg" width="218" height="145"></a>
-        <a href="media/kitchin24.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin24.jpg" width="218" height="145"></a>
-        <a href="media/kitchin25.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin25.jpg" width="218" height="145"></a>
-        <a href="media/kitchin26.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin26.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin27.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin27.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin28.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin28.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin29.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin29.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin30.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin30.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin31.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin31.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin32.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin32.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin33.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin33.jpg" width="218" height="145"></a>
-        <a href="media/kitchin34.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin34.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin35.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin35.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin36.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin36.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin37.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin37.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin38.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin38.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin39.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin39.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin40.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin40.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin41.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin41.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin42.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin42.jpg" width="218" height="145"></a>
-        <a href="media/kitchin43.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin43.jpg" width="218" height="145"></a>
-        <a href="media/kitchin44.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin44.jpg" width="218" height="145"></a>
-        <a href="media/kitchin45.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin45.jpg" width="218" height="145"></a>
-        <a href="media/kitchin46.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin46.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin47.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin47.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin48.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin48.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin49.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin49.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin50.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin50.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin51.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin51.jpg" width="218" height="145"></a>
-        <a href="media/kitchin52.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin51.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin53.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin53.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin54.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin54.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin55.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin55.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin56.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin56.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin57.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin57.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin58.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin58.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin59.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin59.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin60.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin60.jpg" width="218" height="145"></a>
-        <a href="media/kitchin61.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin61.jpg" width="218" height="145"></a>
-        <a href="media/kitchin62.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin62.jpg" width="218" height="145"></a>
-        <a href="media/kitchin63.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin63.jpg" width="218" height="145"></a>
-        <a href="media/kitchin64.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin64.jpg" width="218" height="145"></a>
-        <a href="media/kitchin65.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin65.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin66.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin66.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin67.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin67.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin68.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin68.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin69.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin69.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin70.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin70.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin71.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin71.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin72.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin72.jpg" width="218" height="145"></a>
-        <a href="media/kitchin73.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin73.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin74.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin74.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin75.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin75.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin76.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin76.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin77.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin77.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin78.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin78.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin79.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin79.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin80.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin80.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin81.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin81.jpg" width="218" height="145"></a>
-        <a href="media/kitchin82.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin82.jpg" width="218" height="145"></a>
-        <a href="media/kitchin83.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin83.jpg" width="218" height="145"></a>
-        <a href="media/kitchin84.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin84.jpg" width="218" height="145"></a>
-        <a href="media/kitchin85.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin85.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin86.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin86.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin87.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin87.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin88.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin88.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin89.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin89.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin90.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin90.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin91.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin91.jpg" width="218" height="145"></a>
-        <a href="media/kitchin92.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin92.jpg" width="218" height="145"></a>
-        <a href="media/kitchin93.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin93.jpg" width="218" height="145"></a>
-        <a href="media/kitchin94.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin94.jpg" width="218" height="145"></a>
-        <a href="media/kitchin95.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin95.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin96.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin96.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin97.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin97.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin98.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin98.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin99.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin99.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin100.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin100.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin101.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin101.jpg" width="218" height="145"></a>
-        <a href="media/kitchin102.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin102.jpg" width="218" height="145"></a>
-        <a href="media/kitchin103.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin103.jpg" width="218" height="145"></a>
-        <a href="media/kitchin104.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin104.jpg" width="218" height="145"></a>
-        <a href="media/kitchin105.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin105.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin106.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin106.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin107.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin107.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin108.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin108.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin109.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin109.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin110.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin110.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin111.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin111.jpg" width="218" height="145"></a>
-        <a href="media/kitchin112.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin112.jpg" width="218" height="145"></a>
-        <a href="media/kitchin113.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin113.jpg" width="218" height="145"></a>
-        <a href="media/kitchin114.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin114.jpg" width="218" height="145"></a>
-        <a href="media/kitchin115.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin115.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin116.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin116.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin117.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin117.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin118.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin118.jpg"  width="218" height="145"></a>
-        <a href="media/kitchin119.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin119.jpg"  width="218" height="145"></a>
+        <a href="media/kitchin4.jpg"   data-lightbox="Möllans Showroom" data-title=" Möllans Kök"><img src="media/kitchin4.jpg" width="218" height="145"></a>
+        <a href="media/kitchin5.jpg"   data-lightbox="Möllans Showroom"><img src="media/kitchin5.jpg"  width="218" height="145"></a>
+        <a href="media/kitchin6.jpg"   data-lightbox="Möllans Showroom"><img src="media/kitchin6.jpg"  width="218" height="145"></a>
+        <a href="media/kitchin7.jpg"   data-lightbox="Möllans Showroom"><img src="media/kitchin7.jpg"  width="218" height="145"></a>
+        <a href="media/kitchin8.jpg"   data-lightbox="Möllans Showroom"><img src="media/kitchin8.jpg"  width="218" height="145"></a>
+        <a href="media/kitchin9.jpg"   data-lightbox="Möllans Showroom"><img src="media/kitchin9.jpg"  width="218" height="145"></a>
+        <a href="media/kitchin10.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin10.jpg" width="218" height="145"></a>
+        <a href="media/kitchin11.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin11.jpg" width="218" height="145"></a>
+        <a href="media/kitchin12.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin12.jpg" width="218" height="145"></a>
+        <a href="media/kitchin13.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin13.jpg" width="218" height="145"></a>
+        <a href="media/kitchin14.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin14.jpg" width="218" height="145"></a>
+        <a href="media/kitchin15.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin15.jpg" width="218" height="145"></a>
+        <a href="media/kitchin16.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin16.jpg" width="218" height="145"></a>
+        <a href="media/kitchin17.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin17.jpg" width="218" height="145"></a>
+        <a href="media/kitchin18.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin18.jpg" width="218" height="145"></a>
+        <a href="media/kitchin19.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin19.jpg" width="218" height="145"></a>
+        <a href="media/kitchin20.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin20.jpg" width="218" height="145"></a>
+        <a href="media/kitchin21.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin21.jpg" width="218" height="145"></a>
+        <a href="media/kitchin22.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin22.jpg" width="218" height="145"></a>
+        <a href="media/kitchin23.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin23.jpg" width="218" height="145"></a>
+        <a href="media/kitchin24.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin24.jpg" width="218" height="145"></a>
+        <a href="media/kitchin25.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin25.jpg" width="218" height="145"></a>
+        <a href="media/kitchin26.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin26.jpg" width="218" height="145"></a>
+        <a href="media/kitchin27.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin27.jpg" width="218" height="145"></a>
+        <a href="media/kitchin28.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin28.jpg" width="218" height="145"></a>
+        <a href="media/kitchin29.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin29.jpg" width="218" height="145"></a>
+        <a href="media/kitchin30.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin30.jpg" width="218" height="145"></a>
+        <a href="media/kitchin31.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin31.jpg" width="218" height="145"></a>
+        <a href="media/kitchin32.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin32.jpg" width="218" height="145"></a>
+        <a href="media/kitchin33.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin33.jpg" width="218" height="145"></a>
+        <a href="media/kitchin34.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin34.jpg" width="218" height="145"></a>
+        <a href="media/kitchin35.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin35.jpg" width="218" height="145"></a>
+        <a href="media/kitchin36.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin36.jpg" width="218" height="145"></a>
+        <a href="media/kitchin37.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin37.jpg" width="218" height="145"></a>
+        <a href="media/kitchin38.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin38.jpg" width="218" height="145"></a>
+        <a href="media/kitchin39.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin39.jpg" width="218" height="145"></a>
+        <a href="media/kitchin40.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin40.jpg" width="218" height="145"></a>
+        <a href="media/kitchin41.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin41.jpg" width="218" height="145"></a>
+        <a href="media/kitchin42.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin42.jpg" width="218" height="145"></a>
+        <a href="media/kitchin43.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin43.jpg" width="218" height="145"></a>
+        <a href="media/kitchin44.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin44.jpg" width="218" height="145"></a>
+        <a href="media/kitchin45.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin45.jpg" width="218" height="145"></a>
+        <a href="media/kitchin46.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin46.jpg" width="218" height="145"></a>
+        <a href="media/kitchin47.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin47.jpg" width="218" height="145"></a>
+        <a href="media/kitchin48.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin48.jpg" width="218" height="145"></a>
+        <a href="media/kitchin49.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin49.jpg" width="218" height="145"></a>
+        <a href="media/kitchin50.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin50.jpg" width="218" height="145"></a>
+        <a href="media/kitchin51.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin51.jpg" width="218" height="145"></a>
+        <a href="media/kitchin52.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin51.jpg" width="218" height="145"></a>
+        <a href="media/kitchin53.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin53.jpg" width="218" height="145"></a>
+        <a href="media/kitchin54.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin54.jpg" width="218" height="145"></a>
+        <a href="media/kitchin55.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin55.jpg" width="218" height="145"></a>
+        <a href="media/kitchin56.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin56.jpg" width="218" height="145"></a>
+        <a href="media/kitchin57.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin57.jpg" width="218" height="145"></a>
+        <a href="media/kitchin58.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin58.jpg" width="218" height="145"></a>
+        <a href="media/kitchin59.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin59.jpg" width="218" height="145"></a>
+        <a href="media/kitchin60.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin60.jpg" width="218" height="145"></a>
+        <a href="media/kitchin61.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin61.jpg" width="218" height="145"></a>
+        <a href="media/kitchin62.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin62.jpg" width="218" height="145"></a>
+        <a href="media/kitchin63.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin63.jpg" width="218" height="145"></a>
+        <a href="media/kitchin64.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin64.jpg" width="218" height="145"></a>
+        <a href="media/kitchin65.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin65.jpg" width="218" height="145"></a>
+        <a href="media/kitchin66.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin66.jpg" width="218" height="145"></a>
+        <a href="media/kitchin67.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin67.jpg" width="218" height="145"></a>
+        <a href="media/kitchin68.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin68.jpg" width="218" height="145"></a>
+        <a href="media/kitchin69.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin69.jpg" width="218" height="145"></a>
+        <a href="media/kitchin70.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin70.jpg" width="218" height="145"></a>
+        <a href="media/kitchin71.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin71.jpg" width="218" height="145"></a>
+        <a href="media/kitchin72.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin72.jpg" width="218" height="145"></a>
+        <a href="media/kitchin73.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin73.jpg" width="218" height="145"></a>
+        <a href="media/kitchin74.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin74.jpg" width="218" height="145"></a>
+        <a href="media/kitchin75.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin75.jpg" width="218" height="145"></a>
+        <a href="media/kitchin76.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin76.jpg" width="218" height="145"></a>
+        <a href="media/kitchin77.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin77.jpg" width="218" height="145"></a>
+        <a href="media/kitchin78.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin78.jpg" width="218" height="145"></a>
+        <a href="media/kitchin79.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin79.jpg" width="218" height="145"></a>
+        <a href="media/kitchin80.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin80.jpg" width="218" height="145"></a>
+        <a href="media/kitchin81.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin81.jpg" width="218" height="145"></a>
+        <a href="media/kitchin82.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin82.jpg" width="218" height="145"></a>
+        <a href="media/kitchin83.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin83.jpg" width="218" height="145"></a>
+        <a href="media/kitchin84.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin84.jpg" width="218" height="145"></a>
+        <a href="media/kitchin85.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin85.jpg" width="218" height="145"></a>
+        <a href="media/kitchin86.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin86.jpg" width="218" height="145"></a>
+        <a href="media/kitchin87.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin87.jpg" width="218" height="145"></a>
+        <a href="media/kitchin88.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin88.jpg" width="218" height="145"></a>
+        <a href="media/kitchin89.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin89.jpg" width="218" height="145"></a>
+        <a href="media/kitchin90.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin90.jpg" width="218" height="145"></a>
+        <a href="media/kitchin91.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin91.jpg" width="218" height="145"></a>
+        <a href="media/kitchin92.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin92.jpg" width="218" height="145"></a>
+        <a href="media/kitchin93.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin93.jpg" width="218" height="145"></a>
+        <a href="media/kitchin94.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin94.jpg" width="218" height="145"></a>
+        <a href="media/kitchin95.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin95.jpg" width="218" height="145"></a>
+        <a href="media/kitchin96.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin96.jpg" width="218" height="145"></a>
+        <a href="media/kitchin97.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin97.jpg" width="218" height="145"></a>
+        <a href="media/kitchin98.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin98.jpg" width="218" height="145"></a>
+        <a href="media/kitchin99.jpg"  data-lightbox="Möllans Showroom"><img src="media/kitchin99.jpg" width="218" height="145"></a>
+        <a href="media/kitchin100.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin100.jpg"width="218" height="145"></a>
+        <a href="media/kitchin101.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin101.jpg"width="218" height="145"></a>
+        <a href="media/kitchin102.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin102.jpg"width="218" height="145"></a>
+        <a href="media/kitchin103.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin103.jpg"width="218" height="145"></a>
+        <a href="media/kitchin104.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin104.jpg"width="218" height="145"></a>
+        <a href="media/kitchin105.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin105.jpg"width="218" height="145"></a>
+        <a href="media/kitchin106.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin106.jpg"width="218" height="145"></a>
+        <a href="media/kitchin107.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin107.jpg"width="218" height="145"></a>
+        <a href="media/kitchin108.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin108.jpg"width="218" height="145"></a>
+        <a href="media/kitchin109.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin109.jpg"width="218" height="145"></a>
+        <a href="media/kitchin110.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin110.jpg"width="218" height="145"></a>
+        <a href="media/kitchin111.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin111.jpg"width="218" height="145"></a>
+        <a href="media/kitchin112.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin112.jpg"width="218" height="145"></a>
+        <a href="media/kitchin113.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin113.jpg"width="218" height="145"></a>
+        <a href="media/kitchin114.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin114.jpg"width="218" height="145"></a>
+        <a href="media/kitchin115.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin115.jpg"width="218" height="145"></a>
+        <a href="media/kitchin116.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin116.jpg"width="218" height="145"></a>
+        <a href="media/kitchin117.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin117.jpg"width="218" height="145"></a>
+        <a href="media/kitchin118.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin118.jpg"width="218" height="145"></a>
+        <a href="media/kitchin119.jpg" data-lightbox="Möllans Showroom"><img src="media/kitchin119.jpg"width="218" height="145"></a>
 
     </div>
-
-
-     
-     <!-- Footer -->
-     
-     <nav class="bottomnav" id="mybottomnav">
-            <div class="footer padding-44"> <br>
-            
-                <a href="#top" class="back-to-top">Back to Top</a>
-           
-                <footer>
-                         <br>
-                    <h3>Möllans Kök</h3>
-                    <br>
-                    <div class="row">
-                      <div class="column" >
-                        <h4>TEXT</h4>
-                        <p>Some text..</p>
-                      </div>
-                      <div class="column" >
-                        <h4>TEXT</h4>
-                        <p>Some text..</p>
-                      </div>
-                      <div class="column" >
-                        <h4>TEXT</h4>
-                        <p>Some text..</p>
-                      </div>
-                      <div class="column">
-                        <h3>Social Media Links</h3>
-                        <i href="#" class="fa fa-facebook"></i>
-                        <i href="#" class="fa fa-instagram" style="color:orangered"></i>
-                        <i href="#" class="fa fa-linkedin"></i>
-                        <i href="#" class="fa fa-skype" style="color:rgb(66, 233, 255)"></i>
-                        <i href="#" class="fa fa-twitter" style="color:skyblue"></i>
-                      </div>
-                    </div>
-    
-                        <br> <br>
-                    <p style="font-size: 1em;"> © 2018 K Design AB. All rights reserved <a href="file:///Users/kaiser/Documents/uyghurtech/Slutions.html" title="footer" target="_blank">Kaiser A ÖzHun</a></p>
-                    <br> <br>
-                  </footer>
-                   </div>
-               </nav>
-
-
+    <!--- Footer -->
+  <footer>     
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/map1.png" style="width:31px;height:56px;">
+                    <hr class="light">
+                    <p>Address: Storgatan 28, 211 42 Malmö</p>
+                    <p>Phone: +46 708 88 64 40</p>
+                    <p>Email: info@mollansverkstader.se</p>
+                       </div>
+                          <div class="col-md-4">
+                             <hr class="light">
+                              <h5>Öpet tid</h5>
+                              <hr class="light">
+                              <p>Mon-Fri: 9am - 5pm</p>
+                              <p>Lördag: 10am - 4pm</p>
+                              <p>Söndag: Stäng</p>
+                          </div>
+                              <div class="col-md-4">
+                                  <hr class="light">
+                                   <h5>Värkstad</h5>
+                                   <hr class="light">
+                                   <p>Malmö</p>
+                                   <p>Lund</p>
+                                   <p>Lomma</p>
+                               </div>
+                 <div class="col-12">
+                     <hr class="light-100">
+                     <p>
+                          <a style="font-size: 1em;  color: aliceblue"  href="#top" class="back-to-top">Back to Top</a>  
+                         </p>
+                     <p style="font-size: 0.6em;"> Copyright © 2018 K-design and developER All rights reserved</p>
+        
+                 </div>
+            </div>
+        </div>
+      
+        </footer>
+      
 
     <script>
 
@@ -259,8 +281,18 @@
               }
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
-            }
-            </script>
+             }
+        
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+        </script>
             
             
 </body>
