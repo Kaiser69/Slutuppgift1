@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <link rel="stylesheet" href="contact.css">
+<title>FeedBack Form With Email Functionality</title>
+<link href="css/elements.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -20,57 +24,55 @@
                 <a class="navbar-brand" href="#"> <img class="images" src="media/mkl.png" style="width:30px;height:30px;"></a>
                 <a class="nav-link" href="index.html">MÖLLANS/HEM</a>
                 <a class="nav-link" href="lighthhouse.html">MÖLLANS SHOWROOM</a> 
-                <a class="nav-link" href="contact/index.php">VIKTIGA DOKUMENT</a> 
-                <a class="nav-link" href="#">AVTAL</a> 
-                <a class="nav-link" href="#"> BOKNING</a> 
+                <a class="nav-link" href="viktigadokument.html">VIKTIGA DOKUMENT</a> 
+                <a class="nav-link" href="avtal.html">AVTAL</a> 
+                <a class="nav-link" href="sendemail.php"> BOKNING</a> 
                 <a class="#kontakt" href="contact.html">KONTAKT</a> 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
               </div>
     </nav>
- 
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1 m-auto">
-            <div class="contact-form">
-                <h1>Contact Us</h1>
-                <p class="hint-text">We'd love to hear from you, please drop us a line if you've any query or question.</p>       
-                <form action="/examples/actions/confirmation.php" method="post">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputName">Name</label>
-                                <input type="text" class="form-control" id="inputName" required>
-                            </div>
-                        </div>                
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputEmail">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" required>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputPhone">Phone</label>
-                                <input type="text" class="form-control" id="inputPhone" required>
-                            </div>
-                        </div>
-                    </div>            
-                    <div class="form-group">
-                        <label for="inputSubject">Subject</label>
-                        <input type="text" class="form-control" id="inputSubject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputMessage">Message</label>
-                        <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> <a href="mailto:pen1921@me.com?Subject=Test%20Mail">Send Mail</a></button>
-                </form>
-            </div>
-        </div>
+
+              
+    <form id="all">
+            <div id="test">loading</div>
+            <div id="ttt"></div>
+            </form>
+            <hr class="light">
+        <p id="text">Time in Malmö</p>
+
+ <!--- Contact form -->
+ <div class="landing-page"><div class="form-appointment"><div class="wpcf7" id="wpcf7-f560-p590-o1"><form action="/landing-page-template-do-not-delete/#wpcf7-f560-p590-o1" method="post" class="wpcf7-form" novalidate="novalidate" _lpchecked="1">
+    <div style="display: none;">
+    <input type="hidden" name="_wpcf7" value="560">
+    <input type="hidden" name="_wpcf7_version" value="3.5">
+    <input type="hidden" name="_wpcf7_locale" value="">
+    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f560-p590-o1">
+    <input type="hidden" name="_wpnonce" value="dbb28877d5">
     </div>
+    <div class="group">
+    <div style="width: 48%; float: left;">
+    <span class="wpcf7-form-control-wrap text-680"><input type="text" name="text-680" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" placeholder="Name"></span><br>
+    <span class="wpcf7-form-control-wrap email-680"><input type="email" name="email-680" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" placeholder="Email"></span><br>
+    <span class="wpcf7-form-control-wrap tel-630"><input type="tel" name="tel-630" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" placeholder="Phone"></span><br>
+    <span class="wpcf7-form-control-wrap textarea-398"><textarea name="textarea-398" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" placeholder="Special notes, concerns, or requirements"></textarea></span></div>
+    <div style="width: 48%; float: right;">
+    <h4>What is the best way to reach you?</h4>
+    <p><span class="wpcf7-form-control-wrap radio-98"><span class="wpcf7-form-control wpcf7-radio"><span class="wpcf7-list-item"><label><input type="radio" name="radio-98" value="Phone">&nbsp;<span class="wpcf7-list-item-label">Phone</span></label></span><span class="wpcf7-list-item"><label><input type="radio" name="radio-98" value="Email">&nbsp;<span class="wpcf7-list-item-label">Email</span></label></span></span></span></p>
+    <h4>Days of the week you are available for appointment:</h4>
+    <p><span class="wpcf7-form-control-wrap checkbox-465"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Monday">&nbsp;<span class="wpcf7-list-item-label">Monday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Tuesday">&nbsp;<span class="wpcf7-list-item-label">Tuesday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Wednesday">&nbsp;<span class="wpcf7-list-item-label">Wednesday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Thursday">&nbsp;<span class="wpcf7-list-item-label">Thursday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Friday">&nbsp;<span class="wpcf7-list-item-label">Friday</span></label></span></span></span></p>
+    <h4>Best time of day for your appointment:</h4>
+    <p><span class="wpcf7-form-control-wrap checkbox-246"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-246[]" value="Morning">&nbsp;<span class="wpcf7-list-item-label">Morning</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-246[]" value="Afternoon">&nbsp;<span class="wpcf7-list-item-label">Afternoon</span></label></span></span></span></p></div>
+    </div>
+    <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"> <input type="submit" value="Submit"></div>
+      <div class="wpcf7-response-output wpcf7-display-none">
+
+      </div>
+    </form>
+</div>
+</div>
 </div>
 
-
+      
      <!--- Footer -->
   <footer>     
         <div class="container-fluid padding">
@@ -110,8 +112,6 @@
         </div>
       
         </footer>
-      
-
 
 
         <script>
@@ -125,6 +125,68 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    var day = d.getDay();
+    var date = d.getDate();
+    var month = d.getMonth();
+    var year = d.getFullYear();
+    
+        switch (day){
+        
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+           }
+    
+    
+        if(hours<10){
+            hours = "0" + hours;
+        }
+        if(mins<10){
+            
+            mins = "0" + mins;
+        }
+        if(secs<10){
+
+            secs = "0" + secs;
+        }
+   
+   month = month + 1; document.getElementById("test").innerHTML = hours+":"+mins+":"+secs;
+document.getElementById("ttt").innerHTML = day + ", " + date + "." + month + "." + year;
+}
+setInterval(printTime, 1000);
+
+
+ $(document).ready(function () {
+  $('input[type=submit]').click(function () {
+    $('input[type=submit]').toggleClass('red');
+  });
+});
+
+
         </script>
         
 </body>
